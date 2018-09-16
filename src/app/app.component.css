@@ -1,0 +1,43 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: Tahoma;
+}
+.topnav {
+  background-color:rgb(16, 48, 232);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(16, 48, 232);
+  color: white;
+}
+.menuIcon {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+    margin: 4px 0;
+}
+h1{
+
+  color: white;
+  text-align: center;
+  margin-top: 4px;
+}
