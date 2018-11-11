@@ -1,4 +1,68 @@
 <p>
-  appeal-details works!
+<div>
+    <nav class="subnav">
+        <ul class="nav">
+          <li class="nav-item">
+              <a class="nav-link active" href="#">פרטי פונה</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">מהות פניה</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">פרטי מטפל</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">סיום טיפול</a>
+          </li>
+      </ul>
+      </nav>
+      <div class="primary">fff</div>
+      <form class="clr-form clr-form-compact">
+          <div class="clr-form-control clr-row">
+              <label for="example" class="clr-control-label clr-col-xs-12 clr-col-md-2">Label</label>
+              <div class="clr-control-container clr-col-xs-12 clr-col-md-10">
+                  <div class="clr-input-wrapper">
+                      <input type="text" id="example1" placeholder="Example Input" class="clr-input">
+                      <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+                  </div>
+                  <span class="clr-subtext">Helper Text</span>
+              </div>
+          </div>
+          <div class="clr-form-control clr-row">
+              <label for="example" class="clr-control-label clr-col-xs-12 clr-col-md-2">Label</label>
+              <div class="clr-control-container clr-col-xs-12 clr-col-md-10">
+                  <div class="clr-input-wrapper">
+                      <input type="text" id="example2" placeholder="Example Input" class="clr-input">
+                      <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+                  </div>
+                  <span class="clr-subtext">Helper Text</span>
+              </div>
+          </div>
+          <div class="clr-form-control clr-row">
+              <label for="example" class="clr-control-label clr-col-xs-12 clr-col-md-2">Label</label>
+              <div class="clr-control-container clr-col-xs-12 clr-col-md-10">
+                  <div class="clr-input-wrapper">
+                      <input type="text" id="example3" placeholder="Example Input" class="clr-input">
+                      <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+                  </div>
+                  <span class="clr-subtext">Helper Text</span>
+              </div>
+          </div>
+      </form>
+  <form clrForm [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
 
+     <input type="text" class="fortextbox" name="emailid" placeholder="emailid"
+        formControlName="emailid">
+     <br/>
+
+     <input type="password" class="fortextbox" name="passwd"
+        placeholder="passwd" formControlName="passwd">
+     <br/>
+
+     <input type="submit" class="forsubmit" value="Log In">
+  </form>
+</div>
+
+<p>
+  Email entered is : {{emailid}}
 </p>

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppModule } from '../app.module';
-
+import { FormGroup, FormControl,Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-appeal-details',
@@ -9,10 +8,18 @@ import { AppModule } from '../app.module';
 })
 export class AppealDetailsComponent implements OnInit {
 
-  constructor() { }
+  title = 'Angular 4 Project!';
+   todaydate;
+   componentproperty;
+   emailid;
+   formdata;
+   constructor() { }
+   ngOnInit() {
 
-  ngOnInit() {
-
-  }
-
+      this.formdata = new FormGroup({
+         emailid: new FormControl("angular@gmail.com",Validators.required),
+         passwd: new FormControl("abcd1234",Validators.required)
+      });
+   }
+   onClickSubmit(data) {this.emailid = data.emailid;}
 }

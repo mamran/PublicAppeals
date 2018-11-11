@@ -1,0 +1,56 @@
+<div class="main-container">
+    <div class="alert alert-app-level">
+        ...
+    </div>
+    <header class="header header-6">
+      <div class="branding" >
+        <a href="javascript://" class="nav-link nav-icon">
+          <img class="appLogo" src="src\assets\images\magic-logo-blue@3x.png"><img>
+
+
+      </a>
+    </div>
+    <div class="header-nav">
+        <a routerLink="/dashboard" class="active nav-link nav-text">לוח מחוונים</a>
+        <a href="javascript://" class="nav-link nav-text">Interactive Analytics</a>
+    </div>
+    <div class="header-actions">
+        <a href="javascript://" class="nav-link nav-icon">
+            <clr-icon shape="cog"></clr-icon>
+        </a>
+    </div>
+    </header>
+
+    <div class="content-container">
+        <div class="content-area">
+            <router-outlet></router-outlet>
+        </div>
+        <nav class="sidenav">
+            <section class="sidenav-content">
+                <a routerLink="/appeal-details" routerLinkActive="router-link-active"  class="nav-link active">פניה חדשה</a>
+                <a routerLink="/appeal-wizard" routerLinkActive="router-link-active" >אשף הוספת פניה</a>
+                <section class="nav-group collapsible">
+                    <input id="tabexample1" type="checkbox">
+                    <label for="tabexample1">Collapsible Nav Element</label>
+                    <ul class="nav-list">
+                        <li><a class="nav-link">Link 1</a></li>
+                        <li><a class="nav-link">Link 2</a></li>
+                    </ul>
+                </section>
+                <section class="nav-group">
+                    <input id="tabexample2" type="checkbox">
+                    <label for="tabexample2">Default Nav Element</label>
+                    <ul class="nav-list">
+                        <li><a class="nav-link">Link 1</a></li>
+                        <li><a class="nav-link">Link 2</a></li>
+                        <li><a class="nav-link active">Link 3</a></li>
+                        <li><a class="nav-link">Link 4</a></li>
+                        <li><a class="nav-link">Link 5</a></li>
+                        <li><a class="nav-link">Link 6</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+    </div>
+</div>
+
